@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOCAL LOVE</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap CSS link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- preload banner -->
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
+  <style>
+    .form-container {
+      margin: 2rem 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-group label {
+      font-weight: 600;
+    }
+
+    .total-price {
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/web.svg" width="260" height="100" alt="Footcap logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Destinasi</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Layanan</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="nav-action-list">
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Populer</span>
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+              <data class="nav-action-text" value="">Keranjang: <strong></strong></data>
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- HERO -->
+      <section class="section hero" style="background-image: url('./assets/gambar/bg.jpg')">
+        <div class="container">
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Tempat Yang Sering Dikunjungi</h2>
+
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+                <figure class="card-banner">
+                  <img src="./assets/gambar/cs1.jpeg" width="312" height="350" loading="lazy" alt="Running Sneaker Shoes" class="image-contain">
+                  <ul class="card-action-list">
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+                      <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                    </li>
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Sumba Barat</a>
+                  </div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Destinasi Wisata</a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Booking Form -->
+          <div class="form-container">
+            <form id="booking-form" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="package-type">Pilih Paket:</label>
+                <select id="package-type" class="form-control" required>
+                  <option value="reguler">Reguler</option>
+                  <option value="private">Private</option>
+                </select>
+                <div class="invalid-feedback">Please select a package type.</div>
+              </div>
+              <div class="form-group">
+                <label for="num-people">Jumlah Orang:</label>
+                <input type="number" id="num-people" class="form-control" min="1" value="1" required>
+                <div class="invalid-feedback">Please enter the number of people.</div>
+              </div>
+              <div class="total-price">
+                Total Harga: <span id="price">Rp0</span>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">Pesan Sekarang</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Insta Post Section -->
+      <section class="section insta-post">
+        <ul class="insta-post-list has-scrollbar">
+          <li class="insta-post-item">
+            <img src="./assets/insta/insta-1.jpeg" width="100" height="100" loading="lazy" alt="Instagram post" class="insta-post-banner image-contain">
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="insta-post-item">
+            <img src="./assets/insta/insta-2.jpeg" width="100" height="100" loading="lazy" alt="Instagram post" class="insta-post-banner image-contain">
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <!-- More insta posts -->
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/web.svg" width="160" height="50" alt="Footcap logo">
+          </a>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address class="content">Jl. Pendidikan No.34, Sumba Barat Daya</address>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+6281234567890" class="contact-link">+62 812 3456 7890</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:localove@gmail.com" class="contact-link">localove@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link-box">
+          <ul class="footer-list">
+            <li>
+              <h3 class="h4 link-title">Perusahaan</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Karir</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Kemitraan</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <h3 class="h4 link-title">Layanan</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Layanan Pelanggan</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Bantuan</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Pengembalian</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+
+      const packageTypeElement = document.getElementById('package-type');
+      const numPeopleElement = document.getElementById('num-people');
+      const priceElement = document.getElementById('price');
+
+      const prices = {
+        reguler: 200000,
+        private: 500000,
+      };
+
+      function updatePrice() {
+        const packageType = packageTypeElement.value;
+        const numPeople = parseInt(numPeopleElement.value, 10);
+        const totalPrice = prices[packageType] * numPeople;
+        priceElement.textContent = `Rp${totalPrice.toLocaleString()}`;
+      }
+
+      packageTypeElement.addEventListener('change', updatePrice);
+      numPeopleElement.addEventListener('input', updatePrice);
+
+      updatePrice();
+    })();
+  </script>
+
+</body>
+
+</html>
